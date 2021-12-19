@@ -13,7 +13,12 @@ import {setupCourses} from '../common/setup-test-data';
 
 describe('CoursesCardListComponent', () => {
 
-
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      // declare component + any other components that component uses internally
+      declarations: [CoursesCardListComponent]
+    })
+  })
   it("should create the component", () => {
 
    pending();
